@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/basic.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<script src="assets/js/contact.js"></script>
+</head>	
+	<body>
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="index.html">Contact</a>
+    		</div>
+    		<ul class="nav nav-pills">
+  				<li role="presentation" class="active"><a href="index.html">Home</a></li>
+				<li role="presentation" class="active"><a href="school.html">School</a></li>
+				<li role="presentation" class="active"><a href="work.html">Work</a></li>
+				<li role="presentation" class="active"><a href="contact.html">Contact</a></li>
+			</ul>
+  			</div>
+		</nav>
+		<div id="page-inner">
+			<div class="row">
+			<div class="col-md-6">
+			<div class="form-group">
+	    		<label>First Name:</label>
+	    		<input class="form-control" type="text" id="nFirst">
+	    		<p class="help-block" id="nFirstHelp"></p>
+			</div>
+			<div class="form-group">
+			    <label>Last Name:</label>
+			    <input class="form-control" type="text" id="nLast">
+			    <p class="help-block" id="nLastHelp">        </p>
+			</div>
+			<div class="form-group">
+			    <label>Email:</label>
+			    <input class="form-control" type="text" id="email">
+			    <p class="help-block" id="emailHelp">        </p>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label" for="flexCheckDefault">
+			    	Peferred Contact Method
+				<input class="form-check-input" type="checkbox" id="flexCheckDefault">
+				</label>	
+			</div>
+			<div class="form-group">
+			    <label for="phone">Phone number:</label>
+				<input class="form-control" type="tel" id="phone" placeholder="123-456-7890">
+			    <p class="help-block" id="pNumHelp">        </p>
+			</div>
+			<div class="form-group">
+			    <label>Date of Birth:</label>
+			    <input class="form-control" type="date" id="dob">
+			    <p class="help-block" id="dobHelp">        </p>
+			</div>
+			<div class="form-group">
+				<label>Comments:</label><br>
+				<textarea class="form-control" id="comment" rows="4">
+				</textarea>
+			    <p class="help-block" id="comHelp">        </p>
+			</div>
+			<button id="submit" name="submit" class="btn btn-block btn-success" type="submit" onclick="getInfo();">Submit</button>
+			<div id="firstName"></div>
+			<div id="lastname"></div>
+			<div id="emailA"></div>
+			<div id="perferContact"></div>
+			<div id="phoneA"></div>
+			<div id="date"></div>
+			<div id="commentA"></div>
+			</div>
+			</div>
+			</div>
+		
+	</body>
+</html>
+
